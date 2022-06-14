@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  background-image: url('./images/background.svg');
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: wheat;
+}
+
+.basePlate{
+  width: 240px;
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0.688);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  padding: 30px;
+  text-align: center;
+  color: aliceblue;
+}
+.userDetails{
+  flex: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userPlate{
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.688);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.userName{
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.userEmail{
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+.userImg{
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.footer{
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerBtn{
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  background-color: rgba(255, 255, 255, 0.547);
+  border-radius: 5px;
+}
+.footerBtn:last-child{
+  margin-right: 0;
+}
+.footerBtn:hover{
+  cursor: pointer;
+}
