@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 
-function UserDetails({ currUserId }) {
-  const [currUserData, setCurrUserData] = useState(null);
+function UserDetails({ currUserId, currUserData, setCurrUserData }) {
   useEffect(() => {
     if (currUserId !== -1) {
       const getData = async () => {

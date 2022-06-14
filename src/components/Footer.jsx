@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer({ setCurrUserId, data }) {
+function Footer({ setCurrUserId, data, setCurrUserData }) {
   return (
     <div className="footer">
       {data &&
@@ -8,7 +8,7 @@ function Footer({ setCurrUserId, data }) {
           return (
             <button
               className="footerBtn"
-              onClick={() => setCurrUserId(singleUser.id)}
+              onClick={() => {setCurrUserId(singleUser.id); setCurrUserData(null);}}
               key={singleUser.id}
             >
               {singleUser.id}

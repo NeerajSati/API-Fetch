@@ -7,6 +7,7 @@ import BasePlate from "./components/BasePlate";
 
 function App() {
   const [currUserId, setCurrUserId] = useState(-1);
+  const [currUserData, setCurrUserData] = useState(null);
   const [data, setData] = useState(null);
   useEffect(() => {
     const getData = async () => {
@@ -23,9 +24,9 @@ function App() {
       {currUserId === -1 ? (
         <BasePlate />
       ) : (
-        <UserDetails currUserId={currUserId} />
+        <UserDetails currUserId={currUserId} currUserData = {currUserData} setCurrUserData = {setCurrUserData}/>
       )}
-      <Footer setCurrUserId={setCurrUserId} data={data} />
+      <Footer setCurrUserId={setCurrUserId} data={data} setCurrUserData = {setCurrUserData}/>
     </div>
   );
 }
